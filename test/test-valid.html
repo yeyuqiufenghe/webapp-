@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <title>慕课网2015课程学习情况</title>
+
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .component{
+            width: 50%;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: #eee;
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript" src="../js/lib/jquery.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+
+        $(function (){
+            $('#h5').fullpage({
+                onLeave:function () {},
+                afterLoad:function () {}
+            })
+
+
+            $(".section").on("onLeave",function () {
+                console.log  id=page1      })
+        })
+
+
+    </script>
+
+    <body>
+    <!-- 用于验证 fullpage.js 切换页面，以及内容组织结构可用，组件能够进行动画 -->
+
+        <div id="h5">
+            <div class="section" id="page1">1</div>
+            <div class="section" id="page2">2</div>
+            <div class="section" id="page3">3</div>
+            <div class="section" id="page4">4</div>
+            <div class="section" id="page5">5</div>
+            <div class="section" id="page6">6</div>
+            <div class="section" id="page7">7</div>
+            <div class="section" id="page8">8</div>
+            <div class="section" id="page9">9</div>
+        </div>
+
+    </body>
+
+</html>
